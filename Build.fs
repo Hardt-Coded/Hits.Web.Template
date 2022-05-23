@@ -24,7 +24,7 @@ Target.create "Publish" (fun _ ->
     Tools.dotnet (sprintf "nuget push %s -s nuget.org -k %s" nupkg nugetKey) __SOURCE_DIRECTORY__
 )
 
-Target.create "Pack" (fun _ -> Tools.dotnet "pack HitsWebAppTemplate.proj -c Release -o Hits.Web.Template.nupkg" __SOURCE_DIRECTORY__)
+Target.create "Pack" (fun _ -> Tools.dotnet "pack HitsWebAppTemplate.proj -c Release -o .nupkg" __SOURCE_DIRECTORY__)
 
 Target.create "SetVersion" (fun _ ->
     let version =

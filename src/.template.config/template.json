@@ -8,7 +8,7 @@
         "Serverless",
         "Azure Functions"
     ],
-    "name": "Hits Web Template v0.0.1",
+    "name": "Hits Web Template v0.0.1-beta",
     "tags": {
         "language": "F#",
         "type": "project"
