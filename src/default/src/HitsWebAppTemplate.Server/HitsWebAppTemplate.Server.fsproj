@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+        <OutputType>Exe</OutputType>
+        <_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Helpers\UserHelper.fs" />
+        <None Include="host.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="local.settings.json" Condition="Exists('local.settings.json')">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Remoting.fs" />
+        <Compile Include="Functions.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Fable.Remoting.AzureFunctions.Worker" Version="1.3.0" />
+      <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.6.0" />
+      <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
+      <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.3.0" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.18.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\HitsWebAppTemplate.Shared\HitsWebAppTemplate.Shared.fsproj" />
+    </ItemGroup>
+    <Target Name="RunFunctions">
+        <Exec Command="func start" />
+    </Target>
+ 
+</Project>

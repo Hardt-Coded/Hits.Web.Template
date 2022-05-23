@@ -1,0 +1,24 @@
+{
+    "author": "Roman Provazník",
+    "classifications": [
+        "Web",
+        "Azure",
+        "Fable",
+        "Elmish",
+        "Serverless",
+        "Azure Functions"
+    ],
+    "name": "SAFEr Web App v2.3.0",
+    "tags": {
+        "language": "F#",
+        "type": "project"
+    },
+    "identity": "Hits.Web.Template",
+    "shortName": "HitsWeb",
+    "sourceName": "HitsWebAppTemplate",
+    "sources": [
+        {
+            "source": "./default"
+        }
+    ]
+}

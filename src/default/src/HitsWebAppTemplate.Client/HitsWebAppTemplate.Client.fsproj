@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Msal\Msal.fs" />
+        <Compile Include="Server.fs" />
+        <Compile Include="Pages\Home.fs" />
+        <Compile Include="Pages\Page1.fs" />
+        <Compile Include="Pages\Page2.fs" />
+        <Compile Include="Router.fs" />
+        <Compile Include="SharedView.fs" />
+        <Compile Include="Start.fs" />
+        <Compile Include="App.fs" />
+        <Content Include="index.html" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Fable.Core" Version="3.7.0" />
+      <PackageReference Include="Fable.Elmish.Debugger" Version="3.3.0" />
+      <PackageReference Include="Fable.Elmish.HMR" Version="5.2.0" />
+      <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
+      <PackageReference Include="Fable.Remoting.Client" Version="7.19.0" />
+      <PackageReference Include="Feliz" Version="1.64.0" />
+      <PackageReference Include="Feliz.DaisyUI" Version="2.0.0" />
+      <!--<PackageReference Include="Feliz.React.Msal" Version="0.1.10" />-->
+      <PackageReference Include="Feliz.Router" Version="3.8.0" />
+      <PackageReference Include="Feliz.UseElmish" Version="1.6.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\HitsWebAppTemplate.Shared\HitsWebAppTemplate.Shared.fsproj" />
+    </ItemGroup>
+    <!--<Import Project="..\..\.paket\Paket.Restore.targets" />-->
+</Project>
