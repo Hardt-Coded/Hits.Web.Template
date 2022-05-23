@@ -24,18 +24,18 @@ Target.create "Publish" (fun _ ->
     Tools.dotnet (sprintf "nuget push %s -s nuget.org -k %s" nupkg nugetKey) __SOURCE_DIRECTORY__
 )
 
-Target.create "Pack" (fun _ -> Tools.dotnet "pack SAFEr.Template.proj -c Release -o .nupkg" __SOURCE_DIRECTORY__)
+Target.create "Pack" (fun _ -> Tools.dotnet "pack HitsWebAppTemplate.proj -c Release -o Hits.Web.Template.nupkg" __SOURCE_DIRECTORY__)
 
 Target.create "SetVersion" (fun _ ->
     let version =
-        "SAFEr.Template.proj"
+        "HitsWebAppTemplate.proj"
         |> File.readAsString
         |> (fun x -> Regex.Match (x, "<Version>(.*)</Version>"))
         |> (fun x -> x.Groups.[1].Value)
     
     Shell.regexReplaceInFileWithEncoding
         "  \"name\": .+,"
-       ("  \"name\": \"SAFEr Web App v" + version + "\",")
+       ("  \"name\": \"Hits Web Template v" + version + "\",")
         System.Text.Encoding.UTF8
         "src/.template.config/template.json"
     ()
@@ -46,4 +46,4 @@ let dependencies = [
 ]
 
 [<EntryPoint>]
-let main args = runOrDefault args
+let main args = runOrDefault "Pack" args

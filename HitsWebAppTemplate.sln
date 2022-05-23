@@ -15,6 +15,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "HitsWebAppTemplate.Server",
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "HitsWebAppTemplate.Shared", "src\default\src\HitsWebAppTemplate.Shared\HitsWebAppTemplate.Shared.fsproj", "{0921E8FB-72AA-4706-BF29-AA48E3DFBA1E}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Build", "Build.fsproj", "{B8FBB8DE-2DE4-4727-8A8E-20DE920F795E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,9 +39,20 @@ Global
 		{0921E8FB-72AA-4706-BF29-AA48E3DFBA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0921E8FB-72AA-4706-BF29-AA48E3DFBA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0921E8FB-72AA-4706-BF29-AA48E3DFBA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8FBB8DE-2DE4-4727-8A8E-20DE920F795E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FBB8DE-2DE4-4727-8A8E-20DE920F795E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FBB8DE-2DE4-4727-8A8E-20DE920F795E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FBB8DE-2DE4-4727-8A8E-20DE920F795E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C855A40-4EA4-4EF2-B6F3-A4329B1823B4} = {44099A5C-DEFF-4E85-BF35-E794CFFB3805}
+		{53613265-0C44-4100-839C-2D2A4A610D6E} = {9C855A40-4EA4-4EF2-B6F3-A4329B1823B4}
+		{656D1EE1-1A7E-4C9D-9451-AA0D74C010B9} = {9C855A40-4EA4-4EF2-B6F3-A4329B1823B4}
+		{9431EEF7-018B-44FE-A777-F3EB3D3D2C27} = {9C855A40-4EA4-4EF2-B6F3-A4329B1823B4}
+		{0921E8FB-72AA-4706-BF29-AA48E3DFBA1E} = {9C855A40-4EA4-4EF2-B6F3-A4329B1823B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECDD43B9-3CBE-4067-A90B-C0F4A2E2124E}

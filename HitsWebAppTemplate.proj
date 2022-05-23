@@ -4,7 +4,7 @@
     <PackageId>Hits.Web.Template</PackageId>
     <Version>0.0.1</Version>
     <PackageReleaseNotes>Init</PackageReleaseNotes>
-    <Authors>Roman Provazník</Authors>
+    <Authors>Daniel Hardt</Authors>
     <Description>Opinionated Template for Serverless Elmish Apps</Description>
     <PackageProjectUrl>https://github.com/DieselMeister/Hits.Web.Template</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/DieselMeister/Hits.Web.Template/blob/master/LICENSE</PackageLicenseUrl>

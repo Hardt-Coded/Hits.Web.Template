@@ -1,4 +1,4 @@
-{
+﻿{
     "author": "Roman Provazník",
     "classifications": [
         "Web",
@@ -8,7 +8,7 @@
         "Serverless",
         "Azure Functions"
     ],
-    "name": "SAFEr Web App v2.3.0",
+    "name": "Hits Web Template v0.0.1",
     "tags": {
         "language": "F#",
         "type": "project"
