@@ -6,11 +6,11 @@
     <PackageReleaseNotes>Init</PackageReleaseNotes>
     <Authors>Roman Provazník</Authors>
     <Description>Opinionated Template for Serverless Elmish Apps</Description>
-    <PackageProjectUrl>https://github.com/Dzoukr/SAFEr.Template</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/Dzoukr/SAFEr.Template/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/DieselMeister/Hits.Web.Template</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/DieselMeister/Hits.Web.Template/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>
     </PackageIconUrl>
-    <RepositoryUrl>https://github.com/Dzoukr/SAFEr.Template.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/DieselMeister/Hits.Web.Template.git</RepositoryUrl>
     <PackageTags>template;fsharp;azure;fable;serverless;azure functions;tailwind</PackageTags>
     <PackageType>Template</PackageType>
     <NoBuild>true</NoBuild>
