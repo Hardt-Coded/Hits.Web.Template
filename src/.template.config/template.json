@@ -1,14 +1,15 @@
 ﻿{
-    "author": "Roman Provazník",
+    "author": "Daniel Hardt",
     "classifications": [
         "Web",
         "Azure",
         "Fable",
         "Elmish",
         "Serverless",
-        "Azure Functions"
+        "Azure Functions",
+        "Feliz"
     ],
-    "name": "Hits Web Template v0.0.1-beta",
+    "name": "Hits Web Template v0.0.2-beta",
     "tags": {
         "language": "F#",
         "type": "project"

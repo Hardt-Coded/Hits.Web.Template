@@ -4,7 +4,7 @@ Strongly opinionated modification of amazing [SAFE Stack Template](https://safe-
 
 ## Installation
 
-Install SAFEr Template:
+Install Hits.Web.Template:
 
     dotnet new --install Hits.Web.Template
 
@@ -13,7 +13,7 @@ Create new directory for your kick-ass full-stack next-unicorn app:
     mkdir NextUnicornApp
     cd NextUnicornApp
 
-Bootstrap your application using Giraffe 🦒:
+Create Application:
 
     dotnet new HitsWeb
 
@@ -34,38 +34,12 @@ Your application is now running on:
 
 ## Disclaimer
 
-I stole the Idea from https://github.com/Dzoukr/SAFEr.Template and only changed the code a little bit and removed paket and use nuget.
+I stole...
+I mean I was inspired by the Idea from https://github.com/Dzoukr/SAFEr.Template and only changed the code a little bit and removed paket and use nuget.
 
-## Key differences from SAFE Stack template
-
-### Folder structure
-
-- Project folders contains names of application [AppName].Client, [AppName].Server, ...
-
-### Client
-
-- Fable 3 as dotnet tool
-- Feliz + Feliz.DaisyUI as default
-- Feliz.Router for secured routing (including fallback to default page when navigating to non-existent page)
-- Feliz.UseElmish on page level
-- Elmish for wrapper level
-- TailwindCSS JIT as npm packages
-- SharedView module for helper functions to navigate to strongly typed pages
-- Public content in `public` folder
-- Webpack pre-configured to support SCSS files (from `styles/styles.css`)
-- Webpack pre-configured to correct SPA routing
-- Femto pre-installed
-- Yarn instead of npm used
-- Added MSAL Helper inside
-
-### Server
-
-- Azure Functions
-
-### Shared
-
-- Remoting definition of 3 `API` modules for every Page one!
-
-### GitHub Actions
-
-- Continuous Integration pipeline prepared in `.github/workflows/CI.yml`
+- Fable 4
+- Feliz
+- Feliz.Elmish
+- Vite
+- DaisyUI
+- Nuget

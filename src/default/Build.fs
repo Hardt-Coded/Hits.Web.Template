@@ -18,6 +18,11 @@ let appPublishPath = publishPath </> "app"
 // Targets
 let clean proj = [ proj </> "bin"; proj </> "obj" ] |> Shell.cleanDirs
 
+Target.create "Clean" (fun _ ->
+    serverSrcPath |> clean
+    clientSrcPath |> clean
+)
+
 Target.create "InstallClient" (fun _ ->
     printfn "Node version:"
     Tools.node "--version" clientSrcPath
@@ -49,8 +54,11 @@ Target.create "Run" (fun _ ->
 
 let dependencies = [
     "InstallClient"
+        ==> "Clean"
         ==> "Publish"
+
     "InstallClient"
+        ==> "Clean"
         ==> "Run"
 ]
 
