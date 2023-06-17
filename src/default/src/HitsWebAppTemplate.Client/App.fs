@@ -17,3 +17,7 @@ Program.mkProgram Start.init Start.update Start.AppView
 |> Program.withDebugger
 #endif
 |> Program.run
+
+
+// or
+// ReactDOM.createRoot(Browser.Dom.document.getElementById("hits-app")).render(Start.AppView())
