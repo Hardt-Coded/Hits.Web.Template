@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>Hits.Web.Template</PackageId>
-    <Version>0.0.3-beta</Version>
+    <Version>0.0.5</Version>
     <PackageReleaseNotes>Updated Packages; DaisyUI 4; .NET 8</PackageReleaseNotes>
     <Authors>Daniel Hardt</Authors>
     <Description>Opinionated Template for Serverless Elmish Apps</Description>

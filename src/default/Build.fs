@@ -41,7 +41,8 @@ Target.create "Publish" (fun _ ->
 
 Target.create "Run" (fun _ ->
     let server = async {
-        Tools.func "host start" serverSrcPath
+        Tools.dotnet "watch msbuild /t:RunFunctions" serverSrcPath
+        Tools.func "host start --cors *" serverSrcPath
     }
     let client = async {
         Tools.yarn "start" ""

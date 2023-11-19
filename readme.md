@@ -18,6 +18,15 @@ Create Application:
     dotnet new HitsWeb
 
 
+Install Dependencies (if needed)
+
+    npm install yarn -g
+    npm install -g azure-functions-core-tools
+
+Or Upgrade Azure Function Tools
+
+    npm upgrade -g azure-functions-core-tools
+
 Restore dotnet tools:
 
     dotnet tool restore
@@ -41,5 +50,5 @@ I mean I was inspired by the Idea from https://github.com/Dzoukr/SAFEr.Template 
 - Feliz
 - Feliz.Elmish
 - Vite
-- DaisyUI
+- DaisyUI 4
 - Nuget
