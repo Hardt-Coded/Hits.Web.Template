@@ -15,7 +15,7 @@ Create new directory for your kick-ass full-stack next-unicorn app:
 
 Create Application:
 
-    dotnet new HitsWeb
+    dotnet new hitsweb
 
 
 Install Dependencies (if needed)
