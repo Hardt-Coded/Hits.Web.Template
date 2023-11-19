@@ -36,7 +36,7 @@ module Home =
         React.fragment [
             Html.h1 "Home"
             Html.div state.Message
-            Daisy.buttonGroup [
+            Daisy.join [
                 Daisy.button.button [
                     button.primary
                     prop.text "Click me for success"

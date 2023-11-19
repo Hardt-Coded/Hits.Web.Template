@@ -36,7 +36,7 @@ module Page2 =
         React.fragment [
             Html.h1 "Page 2"
             Html.div state.Message
-            Daisy.buttonGroup [
+            Daisy.join [
                 Daisy.button.button [
                     button.primary
                     prop.text "Click me for success"

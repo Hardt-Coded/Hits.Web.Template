@@ -31,3 +31,4 @@ module Tools =
     let femto = runTool "femto"
     let node = runTool (findTool "node" "node.exe")
     let yarn = runTool (findTool "yarn" "yarn.cmd")
+    let func = runTool (findTool "func" "func.cmd")
