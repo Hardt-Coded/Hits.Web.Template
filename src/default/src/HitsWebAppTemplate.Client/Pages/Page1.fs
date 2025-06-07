@@ -38,6 +38,7 @@ module Page1 =
             Html.div state.Message
             Daisy.join [
                 Daisy.button.button [
+                    button.outline
                     button.primary
                     prop.text "Click me for success"
                     prop.onClick (fun _ -> true |> AskForMessage |> dispatch)

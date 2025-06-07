@@ -1,5 +1,7 @@
 @charset "utf-8";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@source '../fable_modules/Feliz.DaisyUI.5.2.0\DaisyUI.fs';
+@source '../fable_modules/Feliz.DaisyUI.5.2.0\Modifiers.fs';
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+}

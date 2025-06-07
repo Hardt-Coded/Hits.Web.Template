@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import fable from "vite-plugin-fable";
+import postcssplugin from '@tailwindcss/postcss'
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const fsproj = path.join(currentDir, "src/HitsWebAppTemplate.Client/HitsWebAppTemplate.Client.fsproj");
