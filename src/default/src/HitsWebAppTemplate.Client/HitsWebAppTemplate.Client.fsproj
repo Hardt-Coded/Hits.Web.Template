@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
         <Compile Include="Msal\Msal.fs" />
@@ -16,15 +16,14 @@
         <Content Include="index.html" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Fable.Core" Version="4.0.0" />
-        <PackageReference Include="Fable.Elmish.Debugger" Version="4.0.0" />
+        <PackageReference Include="Fable.Core" Version="4.5.0" />
         <PackageReference Include="Fable.Elmish.HMR" Version="7.0.0" />
         <PackageReference Include="Fable.Elmish.React" Version="4.0.0" />
-        <PackageReference Include="Fable.Remoting.Client" Version="7.25.0" />
-        <PackageReference Include="Feliz" Version="2.6.0" />
-        <PackageReference Include="Feliz.DaisyUI" Version="4.0.0" />
+        <PackageReference Include="Fable.Remoting.Client" Version="7.34.0" />
+        <PackageReference Include="Feliz" Version="2.9.0" />
+        <PackageReference Include="Feliz.DaisyUI" Version="5.2.0" />
         <PackageReference Include="Feliz.Router" Version="4.0.0" />
-        <PackageReference Include="Feliz.UseElmish" Version="2.4.0" />
+        <PackageReference Include="Feliz.UseElmish" Version="2.5.0" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\HitsWebAppTemplate.Shared\HitsWebAppTemplate.Shared.fsproj" />
