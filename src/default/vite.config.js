@@ -1,9 +1,20 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import fable from "vite-plugin-fable";
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+const fsproj = path.join(currentDir, "src/HitsWebAppTemplate.Client/HitsWebAppTemplate.Client.fsproj");
+console.log(`Using fsproj: ${fsproj}`);
+
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
-    plugins: [react()],
+    plugins: [
+        fable({ fsproj }),
+        react({ include: /\.fs$/ }),
+    ],
     root: "./src/HitsWebAppTemplate.Client",
     server: {
         port: 8080,
