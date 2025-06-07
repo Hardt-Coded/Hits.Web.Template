@@ -3,9 +3,9 @@
     "scripts": {
         "prestart": "dotnet tool restore",
         "dev": "vite",
-        "start": "dotnet fable watch ./src/HitsWebAppTemplate.Client --outDir ./src/HitsWebAppTemplate.Client/.fable-build --run vite",
+        "start": "vite",
         "prebuild": "dotnet tool restore",
-        "build": "dotnet fable ./src/HitsWebAppTemplate.Client --outDir ./src/HitsWebAppTemplate.Client/.fable-build --run vite build"
+        "build": "vite build"
     },
     "devDependencies": {
         "@types/node": "^20.9.1",
